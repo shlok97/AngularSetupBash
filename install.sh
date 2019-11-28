@@ -1,9 +1,12 @@
+sudo apt-get install curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 command -v nvm
+
+#Restart Node
+
 nvm install node
 node --version
 npm -v
-
 
 # YARN
 
