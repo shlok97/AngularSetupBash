@@ -22,6 +22,21 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.7
 sudo apt install python3-pip
 
+# Install Jupyter
+
+sudo -H pip3 install --upgrade pip
+sudo -H pip3 install virtualenv
+mkdir ~/my_project_dir
+cd ~/my_project_dir
+virtualenv my_project_env
+source my_project_env/bin/activate
+pip install jupyter
+jupyter notebook
+
+# Install Forever
+npm install -g forever
+forever --version
+
 # Install CUDA
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
 sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
