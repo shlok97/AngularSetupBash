@@ -37,6 +37,9 @@ jupyter notebook
 npm install -g forever
 forever --version
 
+# Install Java
+sudo apt install openjdk-8-jdk
+java -version
 # Install Jenkins
 
 wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
